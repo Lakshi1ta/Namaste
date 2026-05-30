@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+@import "tailwindcss";
+
+
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:#161616;
+  color:white;
+  overflow-x:hidden;
+}
+
+h1,h2,h3,h4,h5{
+  font-family:'Playfair Display',serif;
+}
+
+:root{
+  --gold:#d4a24c;
+  --dark:#151515;
+}
+
+.container-custom{
+  width:92%;
+  max-width:1200px;
+  margin:auto;
+}
+
+.gold{
+  color:var(--gold);
+}
+
+.gold-bg{
+  background:var(--gold);
+}
+
+.wood-bg{
+  background-image:url("bg.png");
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+  position:relative;
+}
+
+.wood-bg::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(15,15,15,.88);
+}
+.wood-bg{
+  position:relative;
+}
+
+.wood-bg > *{
+  position:relative;
+  z-index:1;
+}
+.section-content{
+  position:relative;
+  z-index:2;
+}
+
+.glass-card{
+  background:rgba(28,28,28,.95);
+  border:1px solid rgba(212,162,76,.15);
+  backdrop-filter:blur(12px);
+}
+
+.btn-primary{
+  background:#d4a24c;
+  color:black;
+  padding:12px 24px;
+  border-radius:8px;
+  font-weight:600;
+  transition:.3s;
+}
+
+.btn-primary:hover{
+  opacity:.9;
+}
+
+.btn-outline{
+  border:1px solid #d4a24c;
+  color:white;
+  padding:12px 24px;
+  border-radius:8px;
+}
